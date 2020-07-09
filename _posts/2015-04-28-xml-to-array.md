@@ -19,5 +19,6 @@ author:
   first_name: ''
   last_name: ''
 ---
-<p>Here's a PHP one-liner to convert XML string into associative array.</p>
-<p><script src="https://gist.github.com/pmgupte/a33d4abeb0b07ee5a119"></script></p>
+Here's a PHP one-liner to convert XML string into associative array.
+
+{% gist a33d4abeb0b07ee5a119 %}
