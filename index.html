@@ -369,10 +369,9 @@
 			<section class="resume-section" id="blog">
 				<div class="resume-section-content">
 					<h2 class="mb-5">Blog Posts</h2>
-					<div class="alert alert-warning" role="alert">
-						<h4 class="alert-heading">Coming Soon!</h4>
-						<p>Yeah, I am migrating my contents from the blog elsewhere. Once this migration is complete, I will turn on the links here.</p>
-					</div>
+						{% for post in site.posts %}
+							<li><span class="fa-li"><i class="far fa-sticky-note"></i></span><a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} {{ post.title }}</a></li>
+						{% endfor %}
 				</div>
 			</section>
 	    </div>
