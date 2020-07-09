@@ -1,0 +1,32 @@
+---
+layout: post
+title: How to read attachment in servicenow scoped application
+date: 2016-01-15
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+
+tags:
+- attachment
+- getBytes
+- getcontent
+- GlideRecord
+- GlideSysAttachment
+- script
+author:
+  login: pmgupte
+  email: prabhas.gupte@gmail.com
+  display_name: pmgupte
+  first_name: ''
+  last_name: ''
+---
+<div>
+<p>While working on a servicenow application, I came across a scenario where I need to read the attachment contents (XML in my case) and parse them. Quick google search leads to code snippets using <span style="font-family:'courier new', courier, monospace;">GlideSysAttachment.getBytes()</span> which is no longer available to scoped applications, since Fuji patch 9. After trying for a while, I could read the attachment. Here's the code I used for this.</p>
+<p><script src="https://gist.github.com/pmgupte/df835d6cdacf0345c2bc"></script></p>
+</div>
+<div></div>
+<div>
+<p>The <span style="font-family:'courier new', courier, monospace;">sys_attachment</span> table contains the actual attachment, along with table name and table sys id to which this attachment belongs to. Query <span style="font-family:'courier new', courier, monospace;">sys_attachment</span> table, providing table name (optional, because <span style="font-family:'courier new', courier, monospace;">table_sys_id</span> itself is supposed to be unique) and <span style="font-family:'courier new', courier, monospace;">table_sys_id</span>. Then, while iterating over result set, call <span style="font-family:'courier new', courier, monospace;">GlideSysAttachment.getContent()</span>, passing the <span style="font-family:'courier new', courier, monospace;">sys_attachment</span> glide record as argument.</p>
+</div>

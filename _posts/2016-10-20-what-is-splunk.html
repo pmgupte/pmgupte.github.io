@@ -1,0 +1,59 @@
+---
+layout: post
+title: What is Splunk?
+date: 2016-10-20
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+tags:
+- add-on
+- analysis
+- app
+- cluster
+- csv
+- distributed
+- event
+- forwarder
+- host
+- index
+- indexer
+- json
+- log
+- search
+- search head
+- SIEM
+- source
+- sourcetype
+- spl
+- splunk
+- syslog
+author:
+  login: pmgupte
+  email: prabhas.gupte@gmail.com
+  display_name: pmgupte
+  first_name: ''
+  last_name: ''
+---
+<h2>Its like Google for logs!</h2>
+<p>When you need to debug some application or system, what do you do? You go through log files. They tell you (almost) everything about what it was trying to do, and what happened. But what do you do when you need to debug a distributed or cloud based or microservices based system? Do you go to each and every machine/app and try to correlate that information with logs of another machine/app? Do you always have a design where all log lines from all those machines or apps are written to single log? Usually not.</p>
+<p>That's where <a href="https://www.splunk.com/">Splunk</a> is really useful. Its a log processing and analysis product, which stores all your logs in indexed manner, and provides very fast searching ability.</p>
+<h2>Events and Indexes</h2>
+<p>Each entry that gets stored in Splunk is called an '<a href="https://docs.splunk.com/Splexicon:Event">event</a>'. And, the logical place where a particular event is stored in is called as '<a href="https://docs.splunk.com/Splexicon:Index">index</a>'. So, when searching, you basically query some index(es) to find some events.</p>
+<p>Each indexed event has 4 fields associated with it: time, <a href="https://docs.splunk.com/Splexicon:Sourcetype">sourcetype</a>, <a href="https://docs.splunk.com/Splexicon:Source">source</a> and host. The time field indicates when that event happened. Sourcetype identifies data structure of that event, where as source identifies where that event happened. The host is the machine where this event generated. You can search your data using these fields.</p>
+<p>Apart from that, Splunk extracts most of the fields from your data, which can also be used while searching the data.</p>
+<p>The Splunk setup which indexes the data is called as <a href="https://docs.splunk.com/Splexicon:Indexer">indexer</a>.</p>
+<h2>They call it SPL</h2>
+<p>SPL stands for Search Processing Language. Its like a query you enter to grab some data out of Splunk index(es).</p>
+<p>Your search can be a simple term (e.g. a username) to see how frequently it appears in log, or it could be a complex one (e.g. a particular source, particular event, containing this or that, happened between 1am to 4:40am).</p>
+<p>There are endless possibilities which you can search using Splunk. We use Splunk in my company to analyze application logs and find out which exceptions occur more often and on which days it reaches the peak point.</p>
+<p>There's a lot to talk about this, and the best way to know about SPL is to go through Splunk's own <a href="https://docs.splunk.com/Splexicon:Searchprocessinglanguage">documentation on SPL</a>.</p>
+<h2>Apps, Add-ons and Data Sources</h2>
+<p>OK. We have got at least some idea about what it does. But tell me how it gets my log data?!</p>
+<p>Well, there's no big magic in that. There <a href="https://docs.splunk.com/Splexicon:App">apps</a>, <a href="https://docs.splunk.com/Splexicon:Addon">add-ons</a> and other data import sources supported in Splunk using which you bring in the data. You can import those logs files - be it syslog, csv or json. You can also develop splunk apps or add-ons to make API calls to outer world, and produce data understandable to Splunk! Splunk is capable of consuming data outputed on stdout/stderr!</p>
+<h2>There's no database</h2>
+<p>That brings us to the next point: Where does that data go eventually? Let me tell you that there is no database to manage. Splunk stores data directly in the file system. Because of that, in fact the Splunk setup is quite fast.</p>
+<h2>Scalability is easy</h2>
+<p>If a single Splunk server is not enough you can simply add another one. The data can be distributed among multiple Splunk setups. You can have the same <a href="https://docs.splunk.com/Splexicon:Forwarder">forwarder</a> forwarding your data to multiple indexers, or you can have multiple forwarders feeding data to single indexer or a combination of both these cases. Not only that, you can also distribute your search operations using multiple '<a href="https://docs.splunk.com/Splexicon:Searchhead">search heads</a>'. There are these two interesting deployment scenarios known as <a href="http://docs.splunk.com/Documentation/Splunk/6.5.0/Indexer/Basicclusterarchitecture">Indexer Cluster</a> and <a href="http://docs.splunk.com/Documentation/Splunk/6.5.0/DistSearch/SHCarchitecture">Search Head Cluster</a>, and worth exploring when scalability is important.</p>
+<div></div>

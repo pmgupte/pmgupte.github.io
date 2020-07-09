@@ -1,0 +1,58 @@
+---
+layout: post
+title: How to setup Splunk Search Head Cluster?
+date: 2016-10-20
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+tags:
+- deployer
+- forwarder
+- indexer
+- search head cluster
+- setup
+- splunk
+author:
+  login: pmgupte
+  email: prabhas.gupte@gmail.com
+  display_name: pmgupte
+  first_name: ''
+  last_name: ''
+---
+<p>If you already know [what is Splunk]({% post_url 2016-10-20-what-is-splunk %}), and are interested in setting up your own Search Head Cluster, continue reading.</p>
+<p>For this, the environment will be:</p>
+<ul>
+<li>1 Deployer – sends apps/configurations to the search heads</li>
+<li>3 Search Heads – for the SHC</li>
+<li>1 Indexer – the “search peer” that the SHC will dispatch jobs to</li>
+<li>1 Forwarder – for testing data input from the TA/App into the indexer</li>
+</ul>
+<p>Sizing wise you could make them all VMs. Something reasonably small could be as follows for each system – with the Deployer and Forwarder being much smaller.</p>
+<ul>
+<li>4 cores</li>
+<li>8GB RAM</li>
+<li>60GB disk</li>
+</ul>
+<p>Once you have all your machines ready, follow steps given below. My steps consider linux-based setups, but you can do it on any other Splunk-supported OS. Make sure to change paths accordingly.</p>
+<p>0) If you haven't done already, change the default admin password 'changeme' to something else. Any of the SHC setup commands will not work properly if your admin password is the default one.</p>
+<p>1) on Deployer:</p>
+<p>in <span style="font-family:'courier new', courier, monospace;">/opt/splunk/etc/system/local/server.conf</span> add following line under <span style="font-family:'courier new', courier, monospace;">[general]</span> stanza, write following line.</p>
+<p><span style="font-family:'courier new', courier, monospace;">pass4SymmKey = yourKey</span></p>
+<p>Replace <span style="font-family:'courier new', courier, monospace;">yourKey </span>with your plaintext key. Do not worry, Splunk will definitely encrypt it later.</p>
+<p>2) Initialize all search head clusters:</p>
+<p>On each SH, run these commands -</p>
+<p><span style="font-family:'courier new', courier, monospace;">/opt/splunk/bin/splunk init shcluster-config -auth admin:splunk -mgmt_uri &lt;mgmt uri of this setup&gt; -replication_port &lt;any unusual port like 20000&gt; -conf_deploy_fetch_url &lt;mgmt uri of deployer&gt; -secret yourKey</span></p>
+<p><span style="font-family:'courier new', courier, monospace;">/opt/splunk/bin/splunk restart</span></p>
+<p>Now, at this point, each SH where you ran above commands knows who is deployer for them and the key to authenticate with.</p>
+<p>3) Bring up cluster captain:</p>
+<p>This step is required only for SH cluster. You can omit this step if you are not setting up SHC.</p>
+<p><span style="font-family:'courier new', courier, monospace;">/opt/splunk/bin/splunk bootstrap shcluster-captain -servers_list "&lt;comma-separated list of mgmt uri of all search heads, including designated captain&gt;" -auth &lt;this setup's username:password&gt;</span></p>
+<p>4) Check search head cluster status:</p>
+<p>To check the overall status of your search head cluster, run this command from any of the members:</p>
+<p><span style="font-family:'courier new', courier, monospace;">/opt/splunk/bin/splunk show shcluster-status -auth &lt;this setup's username:password&gt;</span></p>
+<p>5) Deploy the bundle (app):</p>
+<p><span style="font-family:'courier new', courier, monospace;">/opt/splunk/bin/splunk apply shcluster-bundle -target &lt;mgmt uri of SH where you want to deploy app&gt; -auth &lt;SH's username:password&gt;</span></p>
+<p><span style="font-family:'courier new', courier, monospace;"><br />
+</span><span style="font-family:inherit;">Your Search Head Cluster setup should be ready and operational now.</span></p>
