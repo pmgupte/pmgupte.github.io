@@ -18,5 +18,6 @@ author:
   first_name: ''
   last_name: ''
 ---
-<p>Here is a PHP function to get the ordinal number. Pass it a number, and it will return a textual number suffixed with either of "st" (like 1st), "nd" (like 2nd), "rd" (like 3rd), "th" (like 4th) etc.</p>
-<p><script src="https://gist.github.com/pmgupte/6019589"></script></p>
+Here is a PHP function to get the ordinal number. Pass it a number, and it will return a textual number suffixed with either of "st" (like 1st), "nd" (like 2nd), "rd" (like 3rd), "th" (like 4th) etc.
+
+{% gist 6019589 %}
