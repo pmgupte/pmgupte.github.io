@@ -19,5 +19,5 @@ author:
   first_name: ''
   last_name: ''
 ---
-<p>If you want to determine the URL from where you cloned your local repository, use this command.</p>
-<p><span style="font-family:'courier new', courier, monospace;">git config --get remote.origin.url</span></p>
+If you are overwhelmed with just too many git checkout just lime me, you might come across a situation where you wonder "from where I cloned this local repository?"
+Don't worry or over-think. You have very simple command to help you: `git config --get remote.origin.url`
