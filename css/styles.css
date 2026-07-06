@@ -1,15 +1,28 @@
-/* Reset */
+/* ===========================================
+   PM Gupte
+   Minimal Typography Theme
+=========================================== */
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 :root {
-    --text: #222;
-    --muted: #666;
+    --background: #f8fafc;
+    --surface: #ffffff;
+
+    --text: #1f2937;
+    --muted: #6b7280;
+
     --accent: #2563eb;
+    --accent-light: #dbeafe;
+
     --border: #e5e7eb;
-    --background: #ffffff;
+
+    --shadow:
+        0 8px 30px rgba(15, 23, 42, 0.06);
 }
 
 html {
@@ -19,8 +32,11 @@ html {
 
 body {
     margin: 0;
+
     background: var(--background);
+
     color: var(--text);
+
     font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -29,130 +45,328 @@ body {
         Helvetica,
         Arial,
         sans-serif;
+
     line-height: 1.8;
 }
 
-/* Layout */
+/* ===========================================
+   Layout
+=========================================== */
 
 .container {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 1.5rem;
+
+    max-width: 780px;
+
+    margin: 2rem auto;
+
+    padding: 0 1.5rem;
+
 }
 
-/* Header */
+/* ===========================================
+   Header
+=========================================== */
 
 .site-header {
-    border-bottom: 1px solid var(--border);
+
     margin-bottom: 2rem;
-    padding-bottom: 1rem;
+
 }
 
 .site-title {
+
     margin: 0;
-    font-size: 1.5rem;
+
+    font-size: 1.4rem;
+
     font-weight: 700;
+
 }
 
 .site-title a {
+
     color: var(--text);
+
     text-decoration: none;
+
 }
 
 .site-nav {
-    margin-top: .6rem;
+
+    margin-top: .5rem;
+
 }
 
 .site-nav a {
+
+    display: inline-block;
+
+    margin-right: .4rem;
+
+    padding: .35rem .75rem;
+
+    border-radius: 8px;
+
     color: var(--muted);
+
     text-decoration: none;
-    margin-right: 1rem;
-    font-size: .95rem;
+
+    transition: all .2s ease;
+
 }
 
 .site-nav a:hover {
+
+    background: var(--accent-light);
+
     color: var(--accent);
+
+    text-decoration: none;
+
 }
 
-/* Typography */
+/* ===========================================
+   Main Content
+=========================================== */
+
+main {
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 2.5rem;
+
+    box-shadow: var(--shadow);
+
+}
+
+/* ===========================================
+   Typography
+=========================================== */
 
 h1 {
+
     font-size: 2.4rem;
-    line-height: 1.2;
+
+    line-height: 1.15;
+
     margin-top: 0;
-    margin-bottom: 1.25rem;
+
+    margin-bottom: 1.5rem;
+
 }
 
 h2 {
-    margin-top: 2.5rem;
-    margin-bottom: .8rem;
-    font-size: 1.4rem;
+
+    margin-top: 2.75rem;
+
+    margin-bottom: .75rem;
+
+    font-size: 1.45rem;
+
+    color: #111827;
+
+}
+
+h3 {
+
+    margin-top: 2rem;
+
+    margin-bottom: .5rem;
+
+    font-size: 1.15rem;
+
 }
 
 p {
+
     margin-bottom: 1.4rem;
+
 }
 
-ul {
-    padding-left: 1.4rem;
+ul,
+ol {
+
+    padding-left: 1.5rem;
+
 }
 
 li {
-    margin-bottom: .5rem;
+
+    margin-bottom: .45rem;
+
 }
 
 blockquote {
+
     margin: 2rem 0;
-    padding-left: 1rem;
-    border-left: 4px solid var(--border);
+
+    padding: .5rem 1.25rem;
+
+    border-left: 4px solid var(--accent);
+
+    background: #f9fafb;
+
     color: var(--muted);
+
 }
 
 hr {
+
     border: none;
+
     border-top: 1px solid var(--border);
-    margin: 2.5rem 0;
+
+    margin: 3rem 0;
+
 }
 
-/* Links */
+/* ===========================================
+   Links
+=========================================== */
 
 a {
+
     color: var(--accent);
+
+    text-decoration: none;
+
 }
 
 a:hover {
+
     text-decoration: underline;
+
 }
 
-/* Footer */
+/* ===========================================
+   Code
+=========================================== */
+
+code {
+
+    background: #eef2ff;
+
+    padding: .15rem .4rem;
+
+    border-radius: 4px;
+
+}
+
+pre {
+
+    background: #111827;
+
+    color: white;
+
+    padding: 1rem;
+
+    border-radius: 10px;
+
+    overflow-x: auto;
+
+}
+
+/* ===========================================
+   Tables
+=========================================== */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin: 2rem 0;
+
+}
+
+th,
+td {
+
+    padding: .75rem;
+
+    border-bottom: 1px solid var(--border);
+
+    text-align: left;
+
+}
+
+/* ===========================================
+   Images
+=========================================== */
+
+img {
+
+    max-width: 100%;
+
+    border-radius: 10px;
+
+}
+
+/* ===========================================
+   Footer
+=========================================== */
 
 .site-footer {
-    margin-top: 4rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border);
+
+    margin-top: 2rem;
+
+    margin-bottom: 3rem;
+
     color: var(--muted);
+
     font-size: .9rem;
+
 }
 
-/* Mobile */
+.site-footer p {
 
-@media (max-width: 640px) {
+    margin: .3rem 0;
+
+}
+
+/* ===========================================
+   Mobile
+=========================================== */
+
+@media (max-width: 768px) {
 
     html {
+
         font-size: 17px;
+
     }
 
     .container {
-        padding: 1.25rem;
+
+        margin: 1rem auto;
+
+        padding: 0 1rem;
+
+    }
+
+    main {
+
+        padding: 1.75rem;
+
+        border-radius: 10px;
+
     }
 
     h1 {
+
         font-size: 2rem;
+
     }
 
     .site-nav a {
-        display: inline-block;
+
         margin-bottom: .5rem;
+
     }
 
 }
