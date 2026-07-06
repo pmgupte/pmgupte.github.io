@@ -28,7 +28,7 @@ On any given week, you might find me:
 
 ## The journey so far
 
-My professional career began in software engineering in 2008.
+My professional career began in software engineering in 2006.
 
 Since then I've had the opportunity to work as:
 
