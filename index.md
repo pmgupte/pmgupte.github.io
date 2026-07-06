@@ -4,23 +4,31 @@ title: Home
 permalink: /
 ---
 
-# Welcome!
+# Building enterprise products, one integration at a time.
 
-I'm Prabhas Gupte, a Product Manager at ArmorCode.
+Welcome! I'm Prabhas Gupte, a Product Manager at ArmorCode.
 
-Most days, I think about enterprise integrations, APIs, platform capabilities, and how security products can work better together.
+I spend most of my days thinking about enterprise integrations, APIs, platform capabilities, and how security products can work better together.
 
-Before Product Management, I spent almost two decades as a software engineer, technical lead, and engineering manager. That journey still shapes how I approach product decisions today. I enjoy understanding customer problems, working closely with engineering teams, and building products that solve real problems.
+Before moving into Product Management, I spent nearly two decades in software engineering and engineering leadership. That experience continues to shape how I approach product decisions today. I enjoy working at the intersection of technology, customer problems, and business outcomes.
 
-This website is my little corner of the internet.
+This website is my place to think out loud.
 
-You'll find my thoughts on product management, enterprise software, artificial intelligence, career growth, and the occasional lesson that only comes from making mistakes.
+I write about product management, enterprise software, artificial intelligence, career growth, and the lessons I learn while building products. Some posts are practical, some are reflective, and a few are simply ideas I'm still trying to make sense of.
 
-If something here resonates with you, I'd be happy to connect.
+I hope you'll find something here that's useful or thought-provoking.
 
-## Explore
+---
 
-- [About](/about)
-- [Experience](/resume)
-- [Insights](/insights)
-- [Now](/now)
+## Start here
+
+If you're visiting for the first time, these are good places to begin:
+
+- **[About](/about)** – My journey from engineering to product management.
+- **[Experience](/resume)** – A summary of my professional work and résumé.
+- **[Insights](/insights)** – Essays and notes on product, technology, and learning.
+- **[Now](/now)** – What I'm currently focused on.
+
+---
+
+Thanks for stopping by.

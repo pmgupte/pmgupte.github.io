@@ -6,44 +6,44 @@ permalink: /about
 
 # About
 
-Hi, I'm Prabhas.
+I didn't set out to become a Product Manager.
 
-Thanks for stopping by.
+Like many people in tech, my career began with writing software. Back in 2006, I was fascinated by solving technical problems and building systems that people could rely on. Over the years, I grew into technical leadership and engineering management, working with teams, delivering software, and learning what it takes to build products at scale.
 
-I currently work as a Product Manager at ArmorCode, where I focus on enterprise integrations, APIs, and platform capabilities.
+Somewhere along the way, my curiosity shifted.
 
-My career started as a software engineer back in 2006. Over the years, I worked across software development, technical leadership, engineering management, and now Product Management. Looking back, every role taught me something valuable, and together they've given me a balanced perspective on building products.
+I found myself spending less time thinking about *how* to build something and more time thinking about *why* we were building it. I enjoyed technical challenges, but I became increasingly interested in understanding customer problems, making trade-offs, and shaping the direction of a product.
 
-## Why Product Management?
+That curiosity eventually led me into Product Management.
 
-People occasionally ask why I moved from Engineering into Product Management.
+Today, I'm a Product Manager at ArmorCode, where I work on enterprise integrations, APIs, and platform capabilities for cybersecurity products. My engineering background still influences the way I approach product decisions. It helps me connect customer needs with technical realities and collaborate effectively across engineering, design, customer success, and leadership.
 
-The short answer is curiosity.
+## What keeps me curious
 
-As my engineering career progressed, I found myself spending more time thinking about *why* we were building something than *how* we were building it. I enjoyed technical challenges, but I became increasingly interested in understanding customer problems, making trade-offs, and shaping product direction.
-
-Product Management felt like the natural next step.
-
-## What I'm interested in
-
-These days I spend a lot of time thinking about:
+The topics that consistently capture my attention include:
 
 - Enterprise integrations
 - Platform products
-- APIs
+- APIs and developer experience
 - Cybersecurity
 - Artificial Intelligence
 - Product strategy
 - Systems thinking
 
+I enjoy learning how complex systems fit together, whether they're technical architectures, organizations, or products.
+
 ## Why this website?
 
-I wanted a place that isn't controlled by an algorithm.
+For a long time, most of my writing lived in notebooks or drafts that never went anywhere.
 
-Social media is great for quick conversations, but it isn't the best place for thoughtful writing. This website gives me a space to document ideas, lessons, and experiences as I continue learning.
+I wanted a place that was entirely my own. A place where I could slow down, think more deeply, and share ideas without worrying about algorithms or character limits.
 
-I don't plan to publish frequently.
+This website is that place.
 
-I do hope to publish things that are useful.
+You'll find reflections on product management, enterprise software, AI, career growth, and the lessons I continue to learn along the way. Some posts will be practical. Others will simply be attempts to understand a problem a little better.
 
-If you'd like to continue the conversation, feel free to reach out on LinkedIn.
+I don't expect to publish every week.
+
+But when I do publish, I hope it's something worth your time.
+
+If something here resonates with you, I'd be glad to continue the conversation. Feel free to connect with me on LinkedIn.
