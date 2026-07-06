@@ -1,42 +1,48 @@
 ---
 layout: default
 title: Now
-permalink: /now/
+permalink: /now
 ---
 
 # Now
 
-_Last updated: July 2026_
+*Last updated: July 2026.*
 
-This page captures what I'm focused on right now.
+This page is a snapshot of what I'm focused on these days.
 
-## At Work
+## At work
 
-Building enterprise integrations and platform capabilities at ArmorCode.
+I'm building enterprise integrations and platform capabilities at ArmorCode.
 
-## Learning
+The work is technically challenging and gives me plenty of opportunities to learn how great enterprise products are built.
 
-Current areas I'm actively exploring:
+## Currently learning
+
+Right now I'm spending time learning more about:
 
 - Product discovery
 - Enterprise platform strategy
 - AI-assisted Product Management
 - API design
-- Enterprise architecture
+- Customer research
 
-## Building
+## Outside work
 
-Outside work, I'm currently investing time in:
+I'm trying to become more intentional about learning.
 
-- Growing this website
-- Writing more consistently
-- Becoming a stronger Product Manager
-- Exploring long-term opportunities in consulting and software products
+That currently means:
+
+- Writing more consistently.
+- Building this website.
+- Reading more books than social media posts.
+- Thinking about long-term opportunities beyond full-time employment.
 
 ## Reading
 
-I'm usually reading books on product management, technology, leadership, decision making, or artificial intelligence. I'll keep this section updated as my reading list evolves.
+My reading list usually includes books on product management, technology, leadership, psychology, and artificial intelligence.
+
+I'll keep this page updated as my priorities evolve.
 
 ---
 
-This page is inspired by Derek Sivers' idea of a **/now** page and reflects what I'm focused on at this point in time.
+Inspired by Derek Sivers' idea of a **/now** page.

@@ -4,19 +4,23 @@ title: Home
 permalink: /
 ---
 
-# Prabhas Gupte
+# Welcome!
 
-Product Manager with a strong engineering background, focused on enterprise integrations, APIs, and cybersecurity platforms.
+I'm Prabhas Gupte, a Product Manager at ArmorCode.
 
-After nearly two decades in software engineering and engineering leadership, I transitioned into Product Management to work closer to customer problems and product strategy.
+Most days, I think about enterprise integrations, APIs, platform capabilities, and how security products can work better together.
 
-Today, I build enterprise platform capabilities that help security teams connect their tools, automate workflows, and derive more value from their security ecosystem.
+Before Product Management, I spent almost two decades as a software engineer, technical lead, and engineering manager. That journey still shapes how I approach product decisions today. I enjoy understanding customer problems, working closely with engineering teams, and building products that solve real problems.
 
-This website is my professional space on the internet. I write occasionally about product management, enterprise software, artificial intelligence, software engineering, and the lessons I learn along the way.
+This website is my little corner of the internet.
+
+You'll find my thoughts on product management, enterprise software, artificial intelligence, career growth, and the occasional lesson that only comes from making mistakes.
+
+If something here resonates with you, I'd be happy to connect.
 
 ## Explore
 
-- [About](/about/)
-- [Experience](/resume/)
-- [Insights](/insights/)
-- [Now](/now/)
+- [About](/about)
+- [Experience](/resume)
+- [Insights](/insights)
+- [Now](/now)

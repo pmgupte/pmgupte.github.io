@@ -1,35 +1,49 @@
 ---
 layout: default
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 # About
 
-Hello, I'm Prabhas.
+Hi, I'm Prabhas.
 
-I'm a Product Manager at ArmorCode, focused on enterprise integrations, APIs, and platform capabilities for cybersecurity products.
+Thanks for stopping by.
 
-My career began in software engineering, where I spent nearly two decades designing, building, and leading enterprise software. During that time, I worked across software development, technical leadership, engineering management, and enterprise integrations.
+I currently work as a Product Manager at ArmorCode, where I focus on enterprise integrations, APIs, and platform capabilities.
 
-Over time, I found myself increasingly interested in understanding customer problems, evaluating trade-offs, and shaping product direction. That curiosity eventually led me into Product Management.
+My career started as a software engineer back in 2008. Over the years, I worked across software development, technical leadership, engineering management, and now Product Management. Looking back, every role taught me something valuable, and together they've given me a balanced perspective on building products.
 
-Today, I enjoy working at the intersection of technology, business, and customer needs. My engineering background helps me collaborate effectively across engineering, design, customer success, and leadership while making practical product decisions.
+## Why Product Management?
 
-## Areas of Interest
+People occasionally ask why I moved from Engineering into Product Management.
 
-- Product Management
-- Enterprise Integrations
-- APIs and Platform Products
-- Enterprise SaaS
+The short answer is curiosity.
+
+As my engineering career progressed, I found myself spending more time thinking about *why* we were building something than *how* we were building it. I enjoyed technical challenges, but I became increasingly interested in understanding customer problems, making trade-offs, and shaping product direction.
+
+Product Management felt like the natural next step.
+
+## What I'm interested in
+
+These days I spend a lot of time thinking about:
+
+- Enterprise integrations
+- Platform products
+- APIs
 - Cybersecurity
 - Artificial Intelligence
-- Systems Thinking
+- Product strategy
+- Systems thinking
 
 ## Why this website?
 
-This website is my digital notebook.
+I wanted a place that isn't controlled by an algorithm.
 
-I use it to document ideas, lessons, and experiences from building software products. Some posts are technical, while others explore product thinking, career transitions, and the intersection of engineering and business.
+Social media is great for quick conversations, but it isn't the best place for thoughtful writing. This website gives me a space to document ideas, lessons, and experiences as I continue learning.
 
-I don't aim to publish frequently. I aim to publish thoughtfully.
+I don't plan to publish frequently.
+
+I do hope to publish things that are useful.
+
+If you'd like to continue the conversation, feel free to reach out on LinkedIn.
