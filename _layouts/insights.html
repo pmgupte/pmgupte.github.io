@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+{{ content }}
+
+{% if site.posts.size > 0 %}
+
+<hr>
+
+{% for post in site.posts %}
+
+<h2>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+</h2>
+
+<p>
+    <small>{{ post.date | date: "%d %B %Y" }}</small>
+</p>
+
+{% if post.excerpt %}
+<p>{{ post.excerpt }}</p>
+{% endif %}
+
+{% endfor %}
+
+{% else %}
+
+<hr>
+
+<p><strong>The first essays are on their way.</strong></p>
+
+<p>
+I'm still shaping the ideas worth sharing. I'd rather publish something useful than publish something quickly.
+Check back soon, or connect with me on LinkedIn if you'd like to know when I publish the first one.
+</p>
+
+{% endif %}
