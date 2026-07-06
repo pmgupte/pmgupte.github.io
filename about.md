@@ -12,7 +12,7 @@ Thanks for stopping by.
 
 I currently work as a Product Manager at ArmorCode, where I focus on enterprise integrations, APIs, and platform capabilities.
 
-My career started as a software engineer back in 2008. Over the years, I worked across software development, technical leadership, engineering management, and now Product Management. Looking back, every role taught me something valuable, and together they've given me a balanced perspective on building products.
+My career started as a software engineer back in 2006. Over the years, I worked across software development, technical leadership, engineering management, and now Product Management. Looking back, every role taught me something valuable, and together they've given me a balanced perspective on building products.
 
 ## Why Product Management?
 
