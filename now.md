@@ -32,6 +32,7 @@ I'm trying to become more intentional about learning.
 
 That currently means:
 
+- Running Ollama locally and trying different models.
 - Writing more consistently.
 - Building this website.
 - Reading more books than social media posts.
