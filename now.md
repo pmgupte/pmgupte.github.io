@@ -6,7 +6,7 @@ permalink: /now
 
 # Now
 
-*Last updated: July 2026.*
+*Last updated: September 2026.*
 
 This page is a snapshot of what I'm focused on these days.
 
@@ -20,9 +20,9 @@ The work is technically challenging and gives me plenty of opportunities to lear
 
 Right now I'm spending time learning more about:
 
-- Product discovery
-- Enterprise platform strategy
 - AI-assisted Product Management
+- Enterprise platform strategy
+- Product discovery
 - API design
 - Customer research
 
